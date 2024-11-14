@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">BHARAT K RATHORE</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <!-- <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div> -->
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one" style="color: rgb(20, 90, 202)">Hello,</div>
+        <div class="typeJsWrapper">
+          <div class="container">
+            <h1 class="typeJsText" data-typetext="I'm Front End | Web Developer"></h1>
+          </div>
+        </div>
+
+        <!-- <div class="text-three">UI/UX Designer</div> -->
+        <div class="text-four" style="color: rgb(20, 90, 202)">
+          From India
+        </div>
+      </div>
+      <div class="button">
+        <button onclick="openGmail()">Hire Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="DSC_3378 (1).JPG" alt="No image" />
+        </div>
+        <div class="right">
+          <div class="topic">Testing is my passion</div>
+          <p>
+            Seeking a challenging position in a reputable organization to
+            expand and utilize my learning, skills and knowledge. Possess
+            excellent technical skills and have an eye for detail. Flexible to
+            work in any environment as required Ensuring Quality & Delivering
+            Flawless Solutions
+          </p>
+          <div class="button" onclick="downloadCV()">
+            <button>Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skill Section Start -->
+  <!-- Section Tag and Other Div will same where we need to put same CSS -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Skills Reflects My Knowledge</div>
+          <p>
+            HTML , CSS , Tailwind CSS , JavaScript , Bootstrap , React.js , Figma
+          </p>
+          <div class="experience">
+            <div class="num">0</div>
+            <div class="exp">
+              Year Of <br />
+              Experience
+            </div>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Tailwind CSS</div>
+            <div class="per">50%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavaScript</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Bootstrap</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">React.js</div>
+            <div class="per">50%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Figma</div>
+            <div class="per">50%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>My Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">HTML</div>
+          <p>
+            HTML, or Hypertext Markup Language, is the standard markup language for creating web pages and web
+            applications. It defines the structure and layout of a web document by using a variety of tags and
+            attributes
+          </p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="topic">CSS</div>
+          <p>
+            CSS, which stands for Cascading Style Sheets, is a language used to describe the presentation of a
+            document written in HTML or XML (including XML dialects such as SVG or XHTML). In simpler terms, CSS
+            is used for styling web pages and controlling their appearance.
+          </p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="topic">Tailwind CSS</div>
+          <p>
+            Tailwind CSS is a utility-first CSS framework that allows developers to style applications quickly and efficiently by using pre-built utility classes instead of writing custom CSS for each element. With Tailwind, you can directly apply these small, single-purpose classes in your HTML, such as text-center, bg-blue-500, and p-4, which makes building custom UIs fast and straightforward.
+          </p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="topic">JavaScript</div>
+          <p>
+            "JS" typically refers to JavaScript, which is a widely used programming language for web development.
+            JavaScript (JS) is known for its versatility as it can be used both on the client-side (in web
+            browsers) and server-side (with Node.js).
+          </p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fab fa-android"></i>
+          </div>
+          <div class="topic">Bootstrap</div>
+          <p>
+            Establishing quality metrics to measure and monitor the
+            effectiveness of testing efforts. Analyzing test results and
+            providing insights into the overall quality of the product.
+            Continuous improvement recommendations based on analysis of
+            testing data and metrics.
+          </p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-tablet-alt"></i>
+          </div>
+          <div class="topic">React.js</div>
+          <p>
+            React.js, commonly referred to as React, is a JavaScript library used for building user interfaces
+            (UIs) for web applications. It was developed by Facebook and is maintained by both Facebook and a
+            community of individual developers and companies.
+          </p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+          <div class="topic">Figma</div>
+          <p>
+            Figma is a cloud-based design tool primarily used for interface design, prototyping, and collaboration. It's widely used by designers, developers, and teams to create user interfaces (UI), user experiences (UX), and other digital products. Unlike traditional design tools that require software installation, Figma runs in a web browser, making it easy to use on any device with internet access. Figma also offers desktop apps for more flexibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic">Got a Project? Let's Ensure Quality Together!</div>
+        <p>
+          Are you looking for meticulous Quality Assurance (QA) services to
+          guarantee the reliability and excellence of your software or
+          product? I specialize in delivering comprehensive QA testing,
+          strategic planning, and performance optimization solutions.
+        </p>
+        <div class="button" onclick="openGmail()">
+          <button>Let's Chat</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
