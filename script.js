@@ -36,12 +36,13 @@ cancelBtn.onclick = function () {
 
 // Side Navigation Bar Close When Clicking On Navigation Links
 let navLinks = document.querySelectorAll(".menu li a");
-
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click", function () {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
+    // Reset body scrolling
+    body.style.overflow = "auto";
   });
 }
 
@@ -50,7 +51,6 @@ let typeJsText = document.querySelector(".typeJsText");
 let lines = typeJsText.dataset.typetext.split("|");
 let lineIndex = 0;
 let charIndex = 0;
-
 typeJsText.innerHTML = "";
 
 function type() {
@@ -59,9 +59,7 @@ function type() {
       // Join lines up to the current line being typed
       let textToShow = lines.slice(0, lineIndex).join("<br>");
       if (lineIndex > 0) textToShow += "<br>";
-      textToShow +=
-        lines[lineIndex].substring(0, charIndex + 1) +
-        '<span class="cursor">|</span>';
+      textToShow += lines[lineIndex].substring(0, charIndex + 1) + '<span class="cursor">|</span>';
       typeJsText.innerHTML = textToShow;
       charIndex++;
       setTimeout(type, 150); // Adjust typing speed (in milliseconds)
