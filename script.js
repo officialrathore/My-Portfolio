@@ -34,7 +34,7 @@ cancelBtn.onclick = function () {
   scrollBtn.style.pointerEvents = "auto";
 };
 
-// Side Navigation Bar Close While We Click On Navigation Links
+// Side Navigation Bar Close When Clicking On Navigation Links
 let navLinks = document.querySelectorAll(".menu li a");
 
 for (let i = 0; i < navLinks.length; i++) {
@@ -62,19 +62,18 @@ function type() {
       textToShow +=
         lines[lineIndex].substring(0, charIndex + 1) +
         '<span class="cursor">|</span>';
-
       typeJsText.innerHTML = textToShow;
       charIndex++;
-      setTimeout(type, 150); // Adjust typing speed here (in milliseconds)
+      setTimeout(type, 150); // Adjust typing speed (in milliseconds)
     } else {
       charIndex = 0;
       lineIndex++;
-      setTimeout(type, 1000); // Delay before typing the next line (in milliseconds)
+      setTimeout(type, 1000); // Delay before typing the next line
     }
   } else {
     lineIndex = 0;
     charIndex = 0;
-    setTimeout(type, 1000); // Restart typing after a delay (in milliseconds)
+    setTimeout(type, 1000); // Restart typing after a delay
   }
 }
 
@@ -90,8 +89,8 @@ function openGmail() {
 // Function to download CV
 function downloadCV() {
   const link = document.createElement("a");
-  link.href = "BKresume.pdf"; // Path to your resume file
-  link.download = "Bharat's resume.pdf"; // Name for the downloaded file
+  link.href = "Bharat-Rathore-Resume.pdf"; // Path to your resume file
+  link.download = "Bharat-Rathore-Resume.pdf"; // Name for the downloaded file
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
